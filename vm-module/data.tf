@@ -1,4 +1,4 @@
-data "azurerm_resource_group" "mainn" {
+data "azurerm_resource_group" "main" {
   name = "project-setup-1"
 }
 
