@@ -1,8 +1,9 @@
 resource "azurerm_public_ip" "main" {
-  name                = "${var.component}-ip"
-  location              = data.azurerm_resource_group.main.location
-  resource_group_name   = data.azurerm_resource_group.main.name
-  allocation_method   = "Dynamic"
+  name                 = "${var.component}-ip"
+  location             = data.azurerm_resource_group.main.location
+  resource_group_name  = data.azurerm_resource_group.main.name
+  allocation_method    = "Dynamic"
+  sku                  = "Basic"
 
   tags = {
     component = "${var.component}"
