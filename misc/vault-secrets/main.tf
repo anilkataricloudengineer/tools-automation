@@ -14,8 +14,10 @@ variable "secrets" {
       }
     }
     roboshop-dev = {
-      frontend = {}
-      catalogue = {}
+      frontend = {
+        catalogue_endpoint = "http://catalogue-dev.anilcloudengineer.online:8080"
+      }
+      # catalogue = {}
     }
   }
 }
