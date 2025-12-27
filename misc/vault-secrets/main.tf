@@ -16,6 +16,10 @@ variable "secrets" {
     roboshop-dev = {
       frontend = {
         catalogue_endpoint = "http://catalogue-dev.anilcloudengineer.online:8080"
+        cart_endpoint = "http://cart-dev.anilcloudengineer.online:8080"
+        user_endpoint = "http://user-dev.anilcloudengineer.online:8080"
+        payment_endpoint = "http://payment-dev.anilcloudengineer.online:8080"
+        shipping_endpoint = "http://shipping-dev.anilcloudengineer.online:8080"
       }
       # catalogue = {}
     }
