@@ -21,7 +21,10 @@ variable "secrets" {
         payment_endpoint = "http://payment-dev.anilcloudengineer.online:8080"
         shipping_endpoint = "http://shipping-dev.anilcloudengineer.online:8080"
       }
-      # catalogue = {}
+      catalogue = {
+        MONGO = true
+        MONGO_URL = "mongodb://mongodb-dev.anilcloudengineer.online:27017/catalogue"
+      }
     }
   }
 }
