@@ -22,7 +22,7 @@ variable "secrets" {
         shipping_endpoint = "http://shipping-dev.anilcloudengineer.online:8080"
       }
       catalogue = {
-        MONGO = true
+        MONGO = "true"
         MONGO_URL = "mongodb://mongodb-dev.anilcloudengineer.online:27017/catalogue"
       }
     }
