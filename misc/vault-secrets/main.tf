@@ -15,11 +15,21 @@ variable "secrets" {
     }
     roboshop-dev = {
       frontend = {
-        catalogue_endpoint = "http://catalogue-dev.anilcloudengineer.online:8080"
-        cart_endpoint = "http://cart-dev.anilcloudengineer.online:8080"
-        user_endpoint = "http://user-dev.anilcloudengineer.online:8080"
-        payment_endpoint = "http://payment-dev.anilcloudengineer.online:8080"
-        shipping_endpoint = "http://shipping-dev.anilcloudengineer.online:8080"
+        catalogue_endpoint  = "http://catalogue-dev.anilcloudengineer.online:8080"
+        cart_endpoint       = "http://cart-dev.anilcloudengineer.online:8080"
+        user_endpoint       = "http://user-dev.anilcloudengineer.online:8080"
+        payment_endpoint    = "http://payment-dev.anilcloudengineer.online:8080"
+        shipping_endpoint   = "http://shipping-dev.anilcloudengineer.online:8080"
+        CATALOGUE_HOST      = "catalogue-dev.anilcloudengineer.online"
+        CATALOGUE_PORT      = "8080"
+        USER_HOST           = "user-dev.anilcloudengineer.online"
+        USER_PORT           = "8080"
+        CART_HOST           = "cart-dev.anilcloudengineer.online"
+        CART_PORT           = "8080"
+        SHIPPING_HOST       = "shipping-dev.anilcloudengineer.online"
+        SHIPPING_PORT       = "8080"
+        PAYMENT_HOST        = "payment-dev.anilcloudengineer.online"
+        PAYMENT_PORT        = "8080"
       }
       catalogue = {
         MONGO = "true"
